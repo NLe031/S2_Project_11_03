@@ -20,7 +20,7 @@ function randomInt(lowest, size) {
     return Math.floor(Math.random() * 9)
 };
 
-var randomQ = randomInt
+var randomQ = randomInt()
 
 
 function getQuote(n) {

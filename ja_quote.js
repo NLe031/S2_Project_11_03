@@ -1,3 +1,4 @@
+"use strict"
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
@@ -12,6 +13,14 @@
    quotation tag in the Web page.
 
 */
+//Function that chooses a number from 0 to 9
+function randomInt();
+
+function randomInt(lowest, size) {
+    return Math.floor(Math.random() * 9)
+};
+
+var randomQ = randomInt
 
 
 function getQuote(n) {

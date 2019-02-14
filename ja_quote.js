@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
@@ -14,14 +14,16 @@
 
 */
 //Function that chooses a number from 0 to 9
-function randomInt();
+
 
 function randomInt(lowest, size) {
-    return Math.floor(Math.random() * 9)
+    return Math.floor(Math.random() * 10)
 };
+//Calls and defines a random quote from the list
+var randomQ = randomInt();
 
-var randomQ = randomInt()
-
+var quoteElem = document.getElementsByTagName("quote");
+quoteElem[0].innerHTML = getQuote(randomQ);
 
 function getQuote(n) {
     var quotes = [
